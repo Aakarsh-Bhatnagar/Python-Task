@@ -10,7 +10,7 @@ spec:
         app: pythonpod
     spec:
       containers:
-        - image: sudarshantn/py3
+        - image: aakarsh20/task
           name: pythoncontainer
           command: ["tail", "-f" ,"/dev/null"]
         - image: mongo:4.0.0

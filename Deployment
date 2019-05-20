@@ -1,17 +1,17 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-    name: pythonpod
+    name: mypod
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: pythonpod
+        app: mypod
     spec:
       containers:
         - image: aakarsh20/task
-          name: pythoncontainer
+          name: mycontainer
           command: ["tail", "-f" ,"/dev/null"]
         - image: mongo:4.0.0
-          name: mongocontainer
+          name: mycontainer
